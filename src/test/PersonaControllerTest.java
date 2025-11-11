@@ -1,9 +1,11 @@
 package test;
 
-import controllers.PersonController;
 import models.Person;
 import validaciones.Validators;
 import org.junit.jupiter.api.Test;
+
+import controllers.PersonaController;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 
@@ -11,11 +13,11 @@ import java.util.List;
 
 public class PersonaControllerTest {
 
-    private PersonController controller;
+    private PersonaController controller;
 
     @BeforeEach
     public void setUp() {
-        controller = new PersonController();
+        controller = new PersonaController();
     }
 
     public static Person[] makePersonList() {

@@ -1,11 +1,22 @@
+import controllers.PersonaController;
 import models.Person;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
+        PersonaController personaController = new PersonaController();
+        Person[] personas = makePersonList();
+        for (int i = 0; i < personas.length; i++) {
+            System.out.println(personas[i]);
+        }
+        personaController.sortByName(personas);
+        System.out.println();
+        for (int i = 0; i < personas.length; i++) {
+            System.out.println(personas[i]);
+        }
     }
 
     public static Person[] makePersonList() {
+        
         Person[] people = new Person[20];
         people[0] = new Person("Alice", 30);
         people[1] = new Person("Bob", 25);
