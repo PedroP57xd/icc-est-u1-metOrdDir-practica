@@ -14,7 +14,7 @@ public class App {
             System.out.println(personas[i]);
         }
     }
-
+    //coment
     public static Person[] makePersonList() {
         
         Person[] people = new Person[20];
