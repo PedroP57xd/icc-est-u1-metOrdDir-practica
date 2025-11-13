@@ -18,6 +18,7 @@ public class PersonaController {
                     people[j + 1] = p1;
                     swapped = true;
                     continue;
+
                 } else if (p1 != null && p2 != null) {
                     String name1 = p1.getName();
                     String name2 = p2.getName();
